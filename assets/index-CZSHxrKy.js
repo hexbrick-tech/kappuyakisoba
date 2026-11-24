@@ -35,8 +35,22 @@ out vec4 fragColor;
 void main() {
   vec2 h = vA.zw; float d; int kind = int(vB.y + 0.5); float m = min(h.x, h.y);
   if (kind == 0) d = length(p) - h.x;
-  else if (kind == 1) { float r = clamp(vB.z, 0.0, 1.0) * m; vec2 q = abs(p) - h + r; d = min(max(q.x, q.y), 0.0) + length(max(q, 0.0)) - r; }
-  else if (kind == 2) { float n = floor(vB.z + 0.5), k = 6.2831853 / n, a = atan(p.x, p.y); d = cos(floor(0.5 + a / k) * k - a) * length(p) - h.x * cos(k * 0.5); }
+  else if (kind == 1) {
+    // a box shrunk by the corner radius, grown back by a circle of that radius
+    float r = clamp(vB.z, 0.0, 1.0) * m;
+    vec2 core = h - r, gap = p - clamp(p, -core, core), edge = abs(p) - h;
+    d = gap == vec2(0.0) ? max(edge.x, edge.y) : length(gap) - r;
+  }
+  else if (kind == 2) {
+    // the polygon is where every one of its sides has the point behind it
+    int n = int(clamp(floor(vB.z + 0.5), 3.0, 64.0));
+    float turn = 6.2831853 / float(n), reach = h.x * cos(turn * 0.5);
+    d = -reach;
+    for (int i = 0; i < n; i++) {
+      float side = turn * float(i);
+      d = max(d, dot(p, vec2(sin(side), cos(side))) - reach);
+    }
+  }
   else { float t = min(abs(vB.z), h.x); d = abs(length(p) - (h.x - t * 0.5)) - t * 0.5; m = t * 0.5; }
   float aa = max(fwidth(d), 1e-6);
   float soft = clamp(vB.w, 0.0, 1.0) * m;
@@ -51,6 +65,7 @@ precision highp float;
 in vec2 uv; uniform sampler2D tex; uniform float alpha; out vec4 fragColor;
 void main() { fragColor = texture(tex, uv) * alpha; }`,G=`#version 300 es
 precision highp float;
+precision highp int;
 in vec2 uv;
 out vec4 fragColor;
 uniform vec2 resolution;
