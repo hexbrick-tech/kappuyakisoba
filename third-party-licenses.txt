@@ -1,8 +1,8 @@
-LIVIS includes the third-party software listed below. Each part is provided
+kappuyakisoba includes the third-party software listed below. Each part is provided
 under its own license, reproduced here.
 
 ==============================================================================
-The Go standard library and runtime (livis.wasm, wasm_exec.js)
+The Go standard library and runtime (engine.wasm, wasm_exec.js)
 ==============================================================================
 
 Copyright (c) 2009 The Go Authors. All rights reserved.
@@ -39,7 +39,7 @@ Go math package
 
 Parts of Go's math package
 --------------------------
-Compiled into livis.wasm as part of the Go standard library.
+Compiled into engine.wasm as part of the Go standard library.
 
 Derived from FreeBSD msun:
 

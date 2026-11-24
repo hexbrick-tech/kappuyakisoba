@@ -1,6 +1,6 @@
-# LIVIS
+# kappuyakisoba
 
-Build output of LIVIS, a visual programming environment that runs in the browser.
+Build output of kappuyakisoba, a visual programming environment that runs in the browser.
 
 Copyright (c) 2026 hexbrick-tech. All rights reserved.
 See [LICENSE](LICENSE), [third-party licenses](third-party-licenses.txt), and the
