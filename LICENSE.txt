@@ -1,0 +1,79 @@
+LIVIS
+Copyright (c) 2026 hexbrick-tech. All rights reserved.
+
+The Japanese text governs. The English text is provided for convenience.
+
+--------------------------------------------------------------------------------
+日本語
+--------------------------------------------------------------------------------
+
+1. 権利
+   本ソフトウェア(ソースコード、ビルド結果、画面の意匠、文書を含む)の権利は、
+   第三者の構成要素を除き、著作権者に帰属します。
+
+2. 利用の許諾
+   著作権者が公開する本ソフトウェアを、ウェブブラウザで実行して利用することを、
+   目的を問わず(商用を含む)無償で許諾します。実行に伴う一時的な複製を含みます。
+
+3. 許諾しないこと
+   法令で認められる場合を除き、著作権者の書面による許可なく次の行為はできません。
+   (1) 本ソフトウェアの全部または一部の複製、改変、再配布、公衆送信
+   (2) 本ソフトウェアの第三者への販売、貸与、再許諾
+   (3) 著作権表示またはライセンス表示の削除、改変
+   ソースコードを閲覧できることは、これらの許諾を意味しません。
+
+4. 利用者の作品
+   利用者が作成したパッチと、本ソフトウェアで生成した映像について、著作権者は
+   権利を主張しません。付属のサンプルパッチは、作品の制作のために自由に利用、
+   改変、公開できます(商用を含む)。
+
+5. 第三者の構成要素
+   第三者の構成要素には、それぞれのライセンスが適用され、本書より優先します。
+   内容は配布物の third-party-licenses.txt に記載します。
+
+6. 無保証および責任の制限
+   本ソフトウェアは現状のまま提供され、明示または黙示を問わず、動作、正確性、
+   特定目的への適合性、権利の非侵害を含む一切の保証をしません。本ソフトウェアの
+   利用または利用不能から生じた損害について、著作権者は、法令で認められる範囲で
+   責任を負いません。ただし、著作権者の故意または重大な過失による場合など、法令上
+   免責が認められない場合を除きます。
+
+--------------------------------------------------------------------------------
+English
+--------------------------------------------------------------------------------
+
+1. Ownership
+   Except for third-party components, all rights in this software, including its
+   source code, builds, visual design and documentation, belong to the copyright
+   holder.
+
+2. Permission
+   You may run this software, as published by the copyright holder, in a web
+   browser free of charge for any purpose, including commercial use. This covers
+   the temporary copies a browser makes to run it.
+
+3. Not permitted
+   Except where the law allows it, you may not, without written permission of
+   the copyright holder:
+   (1) copy, modify, redistribute or make available all or part of this software;
+   (2) sell, rent or sublicense this software;
+   (3) remove or alter copyright or license notices.
+   Being able to view the source code does not grant any of these rights.
+
+4. Your work
+   The copyright holder claims no rights in patches you create or in images you
+   produce with this software. The bundled example patches may be used, modified
+   and published freely in your own work, including commercially.
+
+5. Third-party components
+   Third-party components are governed by their own licenses, which take
+   precedence over this document. They are listed in third-party-licenses.txt,
+   distributed with this software.
+
+6. No warranty and limitation of liability
+   This software is provided as is, without warranty of any kind, express or
+   implied, including operation, accuracy, fitness for a particular purpose and
+   non-infringement. To the extent permitted by law, the copyright holder is not
+   liable for damages arising from the use of, or inability to use, this
+   software. This does not apply to intent, gross negligence, or any other case
+   in which liability cannot be excluded by law.
